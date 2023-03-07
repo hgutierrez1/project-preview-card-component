@@ -39,10 +39,11 @@ body{
 #image{
    height: 100%;
    width: 50%;
-   
+   background: var(--soft-violet);
+   border-radius: 0 12px 12px 0 ;
 }
-#image img{
-    border-radius: 0 12px 12px 0 ;
+#image img{  
+    mix-blend-mode: multiply;
     height: 100%;
     width: 100%;      
 }
@@ -105,12 +106,13 @@ h2{
         text-align: center;
     }
     #image{
+        border-radius: 12px 12px 0 0;
         width: 100%;
         height: 33%;
     }
     #image img{
-        border-radius:12px 12px 0 0 ;
-    }
+        display: block;
+    }   
     .stats-container{
         flex-direction: column;
         align-items: center;
