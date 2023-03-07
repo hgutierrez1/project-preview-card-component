@@ -1,0 +1,117 @@
+:root{
+--very-dark-blue: hsl(233, 47%, 7%);
+--dark-desaturated-blue: hsl(244, 38%, 16%);
+--soft-violet: hsl(277, 64%, 61%);
+--white: hsl(0, 0%, 100%);
+--slightly-transparent-white-paragraph: hsla(0, 0%, 100%, 0.75);
+--slightly-transparent-white-heading: hsla(0, 0%, 100%, 0.6);
+}
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background: var(--very-dark-blue);
+}
+.general-container{
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    place-items: center;/*not -content,-items*/
+}
+.content{
+    background:var(--dark-desaturated-blue);
+    display: flex;
+    width: 1180px;
+    height: 480px;
+    border-radius: 12px;
+}
+#description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    padding: 64px 152px 40px 68px;
+}
+#image{
+   height: 100%;
+   width: 50%;
+   
+}
+#image img{
+    border-radius: 0 12px 12px 0 ;
+    height: 100%;
+    width: 100%;      
+}
+#title{
+    color:var(--white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+h1{
+    margin: 0;
+}
+.color{
+    color:var(--soft-violet)
+}
+#description>p{
+    color: var(--slightly-transparent-white-paragraph);
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8rem;
+    margin-bottom: 32px;
+}
+h2{
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+}
+.stats-container{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+}
+.stats>p{
+    color: var(--slightly-transparent-white-heading);
+    font-family: 'Lexend Deca', sans-serif;
+}
+@media (max-width:376px){
+    .content{
+        width: 320px;
+        height: auto;
+        flex-direction: column-reverse;
+        margin: 92px 20px 92px 20px;
+       }
+    #description{
+        width: 100%;
+        height: 67%;
+        padding: 32px;
+    }
+    #title{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    #description>p{
+        font-size: 0.9rem;
+        line-height: 1.45rem;
+        text-align: center;
+    }
+    #image{
+        width: 100%;
+        height: 33%;
+    }
+    #image img{
+        border-radius:12px 12px 0 0 ;
+    }
+    .stats-container{
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+}
