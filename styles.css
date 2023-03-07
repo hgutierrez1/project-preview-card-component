@@ -16,7 +16,7 @@ body{
 .general-container{
     margin: 0;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     display: grid;
     place-items: center;/*not -content,-items*/
 }
@@ -69,18 +69,21 @@ h1{
 h2{
     color: var(--white);
     font-family: 'Inter', sans-serif;
+    margin-bottom: 8px;
 }
 .stats-container{
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 .stats>p{
     color: var(--slightly-transparent-white-heading);
     font-family: 'Lexend Deca', sans-serif;
+    margin-top: 0;
 }
 @media (max-width:376px){
+    .general-container{
+        height: 100%;
+    }
     .content{
         width: 320px;
         height: auto;
@@ -110,8 +113,8 @@ h2{
     }
     .stats-container{
         flex-direction: column;
-        align-content: center;
-        flex-wrap: wrap;
+        align-items: center;
         padding: 0;
+        text-align: center;
     }
 }
