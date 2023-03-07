@@ -111,6 +111,7 @@ h2{
         height: 33%;
     }
     #image img{
+        content: url("./image-header-mobile.jpg");
         display: block;
     }   
     .stats-container{
